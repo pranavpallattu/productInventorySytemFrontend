@@ -3,9 +3,9 @@ import Add from '../components/Add'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { deleteProductApi, getProductApi } from '../services/allApis'
-import Edit from '../components/edit'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import EditProduct from '../components/EditProduct'
 
 
 
@@ -119,7 +119,7 @@ function Home() {
               <td className="text-center">{item?.stock}</td>
               <td className="text-center">{item?.description}</td>
               <td className="text-center">
-                <Edit
+                <EditProduct
                   setProductToEdit={item}
                   setProductUpdateStatus={setProductUpdateStatus}
                 />

@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-function Edit({setProductToEdit,setProductUpdateStatus}) {
+function EditProduct({setProductToEdit,setProductUpdateStatus}) {
     const [show, setShow] = useState(false);
 
     const handleClose = () => {
@@ -89,4 +89,4 @@ function Edit({setProductToEdit,setProductUpdateStatus}) {
   )
 
 }
-export default Edit
+export default EditProduct
